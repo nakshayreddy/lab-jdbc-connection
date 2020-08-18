@@ -1,11 +1,25 @@
 package controller;
 
-import java.sql.Connection;
 
 import utility.ConnectionManager;
 
 public class Main {
-	public static void main(String args[]) {
+	@SuppressWarnings("unused")
+	public static void main(String args[])  throws Exception {
+		
+		ConnectionManager cm=new ConnectionManager();
+		ConnectionManager.getConnection();
+		if(cm!=null)
+		{
+			System.out.println("Connection Established.");
+		}
+		else
+		
+		{
+			System.out.println(" Check your Connection.");
+		}
+		
+		
 		
 	// Fill your code
 		
